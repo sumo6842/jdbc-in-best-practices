@@ -1,4 +1,5 @@
 <Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <Resource name="jdbc/Student" auth="Container" type="javax.sql.DataSource"
               maxTotal="100" maxIdle="30" maxWaitMillis="10000"
               username="sa" password="Linhduc13" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"

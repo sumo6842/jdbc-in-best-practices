@@ -1,5 +1,6 @@
 package com.example.jdpc_in_best_practice.dbutil;
 
+import javax.annotation.sql.DataSourceDefinition;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
