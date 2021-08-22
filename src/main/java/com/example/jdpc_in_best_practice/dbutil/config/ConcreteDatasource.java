@@ -1,10 +1,7 @@
 package com.example.jdpc_in_best_practice.dbutil.config;
 
-import com.example.jdpc_in_best_practice.dbutil.DatasourceHelper;
-import lombok.experimental.UtilityClass;
 import org.apache.commons.dbcp2.BasicDataSource;
 
-import javax.naming.NamingException;
 import java.sql.Connection;
 import java.sql.SQLException;
 

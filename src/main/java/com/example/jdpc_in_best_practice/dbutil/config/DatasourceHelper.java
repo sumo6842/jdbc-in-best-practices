@@ -1,4 +1,4 @@
-package com.example.jdpc_in_best_practice.dbutil;
+package com.example.jdpc_in_best_practice.dbutil.config;
 
 import java.sql.Connection;
 import java.sql.SQLException;

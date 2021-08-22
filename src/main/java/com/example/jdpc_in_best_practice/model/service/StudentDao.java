@@ -1,8 +1,8 @@
 package com.example.jdpc_in_best_practice.model.service;
 
-import com.example.jdpc_in_best_practice.dbutil.ConnectionHelper;
-import com.example.jdpc_in_best_practice.dbutil.SuppliedConnectionHelper;
-import com.example.jdpc_in_best_practice.dbutil.tomcatconfig.TomcatDatasource;
+import com.example.jdpc_in_best_practice.dbutil.connectionhelper.ConnectionHelper;
+import com.example.jdpc_in_best_practice.dbutil.config.DatasourceHelper;
+import com.example.jdpc_in_best_practice.dbutil.connectionhelper.SuppliedConnectionHelper;
 import com.example.jdpc_in_best_practice.model.StudentDto;
 
 import javax.naming.NamingException;
@@ -15,11 +15,15 @@ import static java.util.Optional.empty;
 import static java.util.Optional.of;
 
 public class StudentDao implements StudentService {
-    private final ConnectionHelper connectionHelper = new SuppliedConnectionHelper(TomcatDatasource.getInstance());
+    private final ConnectionHelper connectionHelper;
+
+    public StudentDao(DatasourceHelper connectionHelper) {
+        this.connectionHelper = new SuppliedConnectionHelper(connectionHelper);
+    }
 
     public List<StudentDto> getListStudent() throws SQLException, NamingException {
         List<StudentDto> list = new ArrayList<>();
-        String sql = "SELECT username from Student";
+        String sql = "SELECT username, fullname, role from Student";
         try (Connection con = connectionHelper.getConnection();
              Statement state = con.createStatement();
              ResultSet rs = state.executeQuery(sql)) {

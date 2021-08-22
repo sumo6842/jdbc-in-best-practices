@@ -1,6 +1,7 @@
 package com.example.jdpc_in_best_practice.dbutil;
 
 import com.example.jdpc_in_best_practice.dbutil.config.ConcreteDatasource;
+import com.example.jdpc_in_best_practice.dbutil.connectionhelper.SuppliedConnectionHelper;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

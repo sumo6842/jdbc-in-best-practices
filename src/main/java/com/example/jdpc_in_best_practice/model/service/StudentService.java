@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface StudentService {
     List<StudentDto> getListStudent() throws SQLException, NamingException;
 
-    Optional<StudentDto> searchStudent(String  search) throws SQLException, NamingException;
+    Optional<StudentDto> searchStudent(String search) throws SQLException, NamingException;
 
     Optional<StudentDto> save(StudentDto studentDto) throws SQLException, NamingException;
 

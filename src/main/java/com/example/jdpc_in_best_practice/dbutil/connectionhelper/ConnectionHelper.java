@@ -1,4 +1,4 @@
-package com.example.jdpc_in_best_practice.dbutil;
+package com.example.jdpc_in_best_practice.dbutil.connectionhelper;
 
 import lombok.experimental.UtilityClass;
 

@@ -1,4 +1,6 @@
-package com.example.jdpc_in_best_practice.dbutil;
+package com.example.jdpc_in_best_practice.dbutil.connectionhelper;
+
+import com.example.jdpc_in_best_practice.dbutil.config.DatasourceHelper;
 
 import javax.naming.NamingException;
 import java.sql.Connection;

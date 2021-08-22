@@ -1,7 +1,4 @@
-package com.example.jdpc_in_best_practice.dbutil.tomcatconfig;
-
-import com.example.jdpc_in_best_practice.dbutil.DatasourceHelper;
-import lombok.experimental.UtilityClass;
+package com.example.jdpc_in_best_practice.dbutil.config;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
